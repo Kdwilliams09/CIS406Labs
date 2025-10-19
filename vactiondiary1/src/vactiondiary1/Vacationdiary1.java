@@ -7,7 +7,7 @@ public class Vacationdiary1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Vaction Diary");
+		System.out.println("Vaction Diary");
 		System.out.println();
 		
 		// user input prompt//
@@ -32,11 +32,10 @@ public class Vacationdiary1 {
 		System.out.println("Country: " + placeCountry);
 		System.out.println("Number of Days: " + numDays);
 		System.out.println("Traveled By: " + travelMode);
+		
+		//close scanner object//
+		input.close();
 			
-		
-		
-		
-		
 	}
 
 }
