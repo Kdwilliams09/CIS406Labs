@@ -12,6 +12,16 @@ public class Vacationdiary1 {
 		// user input prompt//
 		System.out.print("Enter the Data Vaction started (mm/dd/yyy: ");
 		Scanner input = new Scanner(System.in);
+		String startDate = input.next();
+		
+		System.out.print("Enter City Visted: ");
+		String placeCity = input.next();
+		System.out.print("Enter Country Visted: ");
+		String placeCountry = input.next();
+		System.out.print("Enter Number of days: ");
+		String numDays = input.next();
+		System.out.print("Enter Mode of Travel (car, airplane, ship, train, bus): ");
+		String travelMode = input.next();
 		
 	}
 
