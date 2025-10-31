@@ -23,15 +23,13 @@ public class TemperatureConversion {
 		degreesC = input.nextDouble();
 				
 		//covert fahrenheit to celsius //
-		double degreeF = (degreesC * 9.0/5) + 32;
-		System.out.println("Degrees in Fahrenheit: " + (int) degreeF);
-		
-		
+		degreesF = (degreesC * 9.0/5) + 32;
+		System.out.println("Degrees in Fahrenheit: " + (int) degreesF);
 		
 		
 		
 		//exit and close Scanner//
-		System.out.println("\n\nBye!!");
+		System.out.println("\nBye!!");
 		input.close();
 		
 
