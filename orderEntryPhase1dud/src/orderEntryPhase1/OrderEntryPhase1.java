@@ -20,13 +20,13 @@ public class OrderEntryPhase1 {
 				
 		//Get item for orderline//
 				
-		System.out.println("Enter Itenm Number");
+		System.out.println("Enter Itenm Number: ");
 		itemNumber = input.nextLine();
 				
 		System.out.println("Enter Item Description: ");
 		itemDescription = input.nextLine();
 				
-		System.out.println("Enter Item Price:$  ");
+		System.out.println("Enter Item Price:$ ");
 		itemPrice = input.nextDouble();
 				
 		System.out.println("Enter Quantity Ordered: ");

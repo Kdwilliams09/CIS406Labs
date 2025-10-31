@@ -1,4 +1,5 @@
-package orderEntryPhase1;
+ //Kayla Williams CIS406 Order Entry Phase//
+package orderEntrtyPhase1;
 
 import java.util.Scanner;
 
@@ -11,58 +12,57 @@ public class OrderEntryPhase1 {
 	private double itemTax;
 	private double totalDiscount;
 	private double netAmount;
-		
-	private void getData()
-	{
+			
+	private void getData() {
 		//Declare Scanner Object to get data//
 		Scanner input = new Scanner(System.in);
-		
-		//Get item for orderline//
-		
-		System.out.println("Enter Itenm Number");
+				
+		//Get item for order line//
+				
+		System.out.print("Enter Item Number: ");
 		itemNumber = input.nextLine();
-		
-		System.out.println("Enter Item Description: ");
+				
+		System.out.print("Enter Item Description: ");
 		itemDescription = input.nextLine();
-		
-		System.out.println("Enter Item Price:$  ");
+				
+		System.out.print("Enter Item Price: $");
 		itemPrice = input.nextDouble();
-		
-		System.out.println("Enter Quantity Ordered: ");
+				
+		System.out.print("Enter Quantity Ordered: ");
 		itemQuantity = input.nextInt();
-		
-		System.out.println("Enter The Total Tax for the item (decimal): ");
+				
+		System.out.print("Enter The Total Tax for the item (decimal): ");
 		itemTax = input.nextDouble();
-		
-		System.out.println("Enter the Total Discount for the item (decimal:$ ");
+				
+		System.out.print("Enter the Total Discount for the item (decimal): $");
 		totalDiscount = input.nextDouble();
-		
-		System.out.println("Enter the Net Amount for the item (decimal): ");
+				
+		System.out.print("Enter the Net Amount for the item (decimal): $");
 		netAmount = input.nextDouble();
-						
 	}
 	
 	public String toString(){
 		return ("\nOrder Details:\n" + 
-				"\nItem Number:" + itemNumber +
-				"\nItem Description:" + itemDescription +
-				"\nItem Price:" + itemPrice +
-				"\nItem Quantity:" + itemQuantity + 
-				"\nItme Tax:" + itemTax +
-				"\nTotal Discount:" + totalDiscount +
-				"\nNet Amount:" + netAmount);
+				"\nItem Number \tItem Description \tItem Price \tItem Quantity \tItem Tax \tTotal Discount \tNet Amount\n" +
+				" " + itemNumber +
+				"\t\t  "+ itemDescription +
+				"\t\t "+ itemPrice +
+				"\t\t  "+ itemQuantity + 
+				"\t\t  "+ itemTax +
+				"\t\t  "+ totalDiscount +
+				"\t\t  $"+ netAmount);
 	}
-	
-	
+
 	public static void main(String[] args) {
-		// create new order//
 		
+		//create new order//
 		OrderEntryPhase1 myOrder = new OrderEntryPhase1();
 		
 		// get the data for order//
 		myOrder.getData();
 		
-		
+		// print order detail//
+		System.out.println(myOrder.toString());
 
 	}
 
