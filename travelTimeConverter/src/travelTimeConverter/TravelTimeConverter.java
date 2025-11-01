@@ -1,3 +1,5 @@
+//Kayla Williams CIS 406 Travel Time Converter//
+
 package travelTimeConverter;
 
 import java.util.Scanner;
@@ -16,12 +18,12 @@ public class TravelTimeConverter {
 		double miles= input.nextDouble();
 		
 		//get miles per hours //
-		System.out.print("\nEnter Miles Per Hour: ");
+		System.out.print("Enter Miles Per Hour: ");
 		double mph= input.nextDouble();
 		
 		//calculate trave time hrs and min output//
 		double hours = miles / mph;
-		System.out.println("Estimated Travel Time");
+		System.out.println("\nEstimated Travel Time");
 		System.out.println("---------------------");
 		System.out.println("Hours: " + (int) hours);
 		
