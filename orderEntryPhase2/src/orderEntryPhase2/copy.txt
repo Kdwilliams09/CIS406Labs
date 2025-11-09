@@ -38,13 +38,14 @@ public class OrderEntryPhase2 {
 			System.out.print("Enter Quantity Ordered: ");
 			itemQuantity = input.nextInt();
 			
-			System.out.print("Enter The Tax Percentage for the item (decimal): ");
+			System.out.print("Enter The Total Tax for the item (decimal): ");
 			itemTax = input.nextDouble();
 					
-			System.out.print("Enter the Discount Percentage for the item (decimal): ");
+			System.out.print("Enter the Total Discount for the item (decimal): $");
 			totalDiscount = input.nextDouble();
 					
-			
+			System.out.print("Enter the Net Amount for the item (decimal): $");
+			netAmount = input.nextDouble();
 		}
 		
 		catch(InputMismatchException e){
@@ -64,17 +65,17 @@ public class OrderEntryPhase2 {
 		
 		//output results //
 		System.out.println("\nOrder Details:\n" + 
-				"\nItem Number \tItem Description \tItem Price \tItem Quantity \tGross Amount \tTax Percentage \tTax Amount \tDiscount Percent \tDiscount Amount \tNet Amount\n" +
+				"\nItem Number \tItem Description \tItem Price \tItem Quantity \tGross Amount \tItem Tax \tTax Amount \tTotal Discount \tDiscount Amount \tNet Amount\n" +
 				" " + itemNumber +
 				"\t\t  "+ itemDescription +
-				"\t\t"+ itemPrice +
-				"\t\t "+ itemQuantity + 
-				"\t   $"+ grossAmount +
-				"\t\t "+ itemTax +
-				"\t "+ taxAmount +
-				"\t\t "+ totalDiscount +
-				"\t\t\t  "+ discountAmount +
-				"\t\t $"+ netAmount);
+				"\t\t "+ itemPrice +
+				"\t\t  "+ itemQuantity + 
+				"\tt   "+ grossAmount +
+				"\t\t  "+ itemTax +
+				"\t\t  "+ taxAmount +
+				"\t\t  "+ totalDiscount +
+				"\t\t  "+ discountAmount +
+				"\t\t  $"+ netAmount);
 		
 		
 		
