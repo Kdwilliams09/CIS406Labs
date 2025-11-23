@@ -64,22 +64,37 @@ public class OrderEntryPhase2 {
 		
 		//output results //
 		System.out.println("\nOrder Details:\n" + 
-				"\nItem Number \tItem Description \tItem Price \tItem Quantity \tGross Amount \tTax Percentage \tTax Amount \tDiscount Percent \tDiscount Amount \tNet Amount\n" +
+				"\nItem Number\t" +
+				"Item Description\t "+
+				"Item Price\t" +
+				"Item Quantity\t" +
+				"Gross Amount\t" +
+				"Tax Percentage\t " +
+				"Tax Amount\t " +
+				"Discount Percent\t " +
+				"Discount Amount\t" +
+				"Net Amount");
+		System.out.println("\n-----------\t" +
+				"----------------\t "+
+				"----------\t" +
+				"------------\t " +
+				"------------\t " +
+				"--------------\t " +
+				"----------\t " +
+				"----------------\t " +
+				"-----------------\t " +
+				"----------");
+		System.out.println( 
 				" " + itemNumber +
 				"\t\t  "+ itemDescription +
-				"\t\t"+ itemPrice +
+				"\t\t "+ itemPrice +
 				"\t\t "+ itemQuantity + 
-				"\t   $"+ grossAmount +
+				"\t\t   $"+ grossAmount +
 				"\t\t "+ itemTax +
-				"\t "+ taxAmount +
+				"\t\t "+ taxAmount +
 				"\t\t "+ totalDiscount +
 				"\t\t\t  "+ discountAmount +
-				"\t\t $"+ netAmount);
-		
-		
-		
-		
-		
+				"\t\t  $"+ netAmount);
 		
 		
 		//Finished//
